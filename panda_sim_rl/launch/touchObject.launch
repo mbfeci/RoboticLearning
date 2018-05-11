@@ -1,0 +1,12 @@
+<launch>
+
+    <include file="$(find panda_sim_gazebo)/launch/panda_sim_gazebo.launch" >
+    </include>
+    <include file="$(find panda_sim_moveit_config)/launch/panda_moveit_planning_execution.launch" >
+    </include>
+    <!-- <node name="manipulator" pkg="panda_sim_rl" type="manipulator.py"  output="screen"/> -->
+    <!-- <node name="ddpg" pkg="panda_sim_rl" type="ddpg.py" output="screen" /> -->
+    <!-- <param name="trajectory_execution/allowed_start_tolerance" value="0.0"/> -->
+    <node name="ddpg_robot" pkg="panda_sim_rl" type="ddpg_robot.py" output="screen" />
+
+</launch>
