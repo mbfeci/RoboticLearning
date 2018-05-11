@@ -16,19 +16,6 @@ from actionlib_msgs.msg import GoalStatus
 from gym import spaces
 
 
-#PANDA_HAND pozisyon tam olarak neresi?
-#get_IK yapip direk objeye goturmeyi dene
-#reward = -(curDist*2 + 0.1(prevDist-curDist)**2)
-#reward = math.exp(-self.gamma*curDist)
-#reward = ?
-#action_boundu 0.5 ten daha kucuk bir sey dene?
-#Elle kubu kaldirtmayi dene
-#Kubu ucurunca negatif verme
-#Random baslatmak
-#delta t yi dusur
-#Priotrized Replay Buffer
-
-
 class RobotGame():
     def __init__(self):
         rospy.init_node("robotGame")
@@ -237,16 +224,6 @@ class RobotGame():
             reward -= 10 #TODO: give penalty instead of reward ?
             done = True
             info = False
-        # print "CURRENT STATE: ", self.manipulator.arm.get_current_state()
-        # print "CURRENT POSE: ", self.manipulator.arm.get_current_pose()
-        # print "POSE1: ", self.getGripperPose('/world')
-        # print "LUL POSE: ", self.manipulator.arm.group.getCurrentPose
-        # print "According to panda_link0, ", self.getGripperPose('/panda_link0')
-        # print "POSE3: ", self.getGripperPose3('/world')
-        # print "Object position: ", pos
-        # print "Gripper pos world: ", self.getGripperPose('/world')
-        # print "Gripper pos panda_link0 ", self.getGripperPose('panda_link0')
-        # print "Gripper pos arm ", self.manipulator.arm.get_current_pose()
         
 
         #OPTION 1:
