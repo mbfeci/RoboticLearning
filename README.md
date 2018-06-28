@@ -6,3 +6,7 @@ The experiments on the real robot ([Video1](https://drive.google.com/open?id=1a6
 [Training Process Video](https://drive.google.com/open?id=1XHAkt2pi1UKQg2ReYQhm59m3tUlh3TRO)
 
 [Report](https://docs.google.com/document/d/1jVb3MFdeGE2V_MIlkK6SqufHDqNQYPQa1pDmeOEI8CE/edit?usp=sharing)
+
+References:
+[Prioritized Experience Replay](https://github.com/takoika/PrioritizedExperienceReplay) - 
+[DDPG](https://yanpanlau.github.io/2016/10/11/Torcs-Keras.html)
